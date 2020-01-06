@@ -130,4 +130,5 @@ dmypy.json
 .pyre/
 
 # custom file directory
-data/
+data/target/
+data/image/
