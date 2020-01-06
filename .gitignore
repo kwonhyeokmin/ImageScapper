@@ -130,5 +130,5 @@ dmypy.json
 .pyre/
 
 # custom file directory
-data/target/
-data/image/
+data/*
+!data/.gitkeep
