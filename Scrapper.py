@@ -12,6 +12,7 @@ from datetime import datetime
 from threading import Thread
 import imghdr
 
+
 def configure_logging():
     logger = logging.getLogger()
     logger.setLevel(logging.DEBUG)
