@@ -15,7 +15,7 @@ import imghdr
 
 def configure_logging():
     logger = logging.getLogger()
-    logger.setLevel(logging.DEBUG)
+    logger.setLevel(logging.INFO)
     handler = logging.StreamHandler()
     handler.setFormatter(
         logging.Formatter('[%(asctime)s %(levelname)s %(module)s]: %(message)s'))
@@ -67,7 +67,7 @@ class Scrapper(object):
             self.result['link'].append(url)
 
         except ValueError as e:
-            logger.debug('Invalid extension type: {}'.format(extension.lower()))
+            logger.debug('Invalid extension type: {}'.format(extension))
             return
 
         except TimeoutError as e:
